@@ -1,0 +1,32 @@
+﻿了解Linux
+
+1.linux是什么
+与windows一样是一款最流行的操作系统
+多用户 多任务 多线程操作系统
+类Unix操作系统（用c c++语言编写）
+特点：
+    开源
+    多用户
+    稳定
+（linux windows）为什么流行?
+linux稳定 linux一般用于企业中服务器使用
+windows以用户体验很好而流行
+
+windows特点
+是一款单用户 多线程 多任务的操作系统
+linux特点
+是一款多用户 多线程 多任务的操作系统
+
+小霸王游戏机
+单用户 单线程 单任务的操作系统
+
+发展史
+1991 AT&T实验室开发了Unix操作系统
+unix7版本发布以后，AT&T将源代码私有化
+Andrew S.Tanebkuam开发了类Unix的微内核的Unix操作系统 minix操作系统 并将其开源化
+Linus trovald 随后对minix操作系统（类Unix）进行优化并于1994年将Linux1.0版本发不出来
+
+历史版本
+Cent os系统 (Enterprise community 企业社区)
+red hat
+Ubuntu
