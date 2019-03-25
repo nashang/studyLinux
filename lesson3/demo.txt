@@ -18,3 +18,33 @@ a)关机 halt
 b)init 0 
 c)重启 reboot
 d)重启 init 6 
+
+5关闭防火墙
+1.windows关闭 netsh firewall set opmode disable
+2. 临时关闭：(linux)
+    i service iptables stop 注意 下次启动的时候防火墙会启动 所以这个命理仅限当前使用
+3.永久关闭
+    chkconfig iptables off 永久关闭 注意：当前执行后不生效，下次重启生效
+
+6用户管理
+1.添加用户
+a)useradd [用户名]
+2.删除用户
+b)userdel [用户名]
+3.修改密码
+a)passwd [用户名]
+b)第二种修改密码的方式 适用于所有密码忘记
+4.查看当前用户
+a)who
+b)w
+
+7文件管理
+1.查看当前目录有哪些文件和目录
+a)dir：只是简单的罗列出大致的文件
+b)ls -al
+ i)ls -a: 不仅有文件还有一些隐藏的目录或者文件
+ ii)ls -l: 不罗列隐藏文件但是会显示更详细的信息
+c) ll 其实就等于：ls-l
+2.路劲
+a)绝对路劲：从根本目录下开始到其他目录的整体路劲，叫绝对路劲
+b)相对路劲：相对与当前所在路劲所言
