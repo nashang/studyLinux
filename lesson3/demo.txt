@@ -58,6 +58,12 @@
 5.删除文件或者目录
     a)rm -rf [文件名或者目录名1] [文件名或者目录名。。。] (可以同时删除多个)
     b)注意：一定要慎用.rm -rf
+6.文件的移动
+a)mv(move) [移动的文件名] [路劲]
+7.文件的重命名
+ mv [要重命名的文件] [新的文件名称]
+8.复制
+    a) cp [要复制的文件] [复制的路劲]
 
 8文档编辑
 1.vim或者vi
@@ -128,4 +134,19 @@ i.find 路劲 -name *.xx(文件结尾) （在某一路劲下查找某文件）
      chmod u-r a.txt 表示文件的所有者的权限减去可读权限
      chmod +x a.txt 表示三种用户都加一个可执行权限 
 
+12.备份压缩与软件安装
+ a)zip包的压缩与解压
+  i)压缩：zip [压缩的目标文件名] [要压缩的文件列表]
+    zip hello.zip a.out b.out c.out
+  ii)解压：unzip
+    unzip [压缩包名称]
+    unzip hello.zip 解压hello.zip
+ b)tar包
+  i.tar包的压缩：tar -cvf[压缩的目标文件名]tar.gz [要压缩的文件列表]
+   tar -cvf hello.tar.gz a.out b.out c.out d.out 将a.out..压缩成hello.tar.gz
+  ii.tar包的解压
+  tar -xvf [tar包的名称]
+  tar -xvf hello.tar.giz 将hello.tar.zip包解压
+c)求md5值
+    a)md5sum [文件名]
 
