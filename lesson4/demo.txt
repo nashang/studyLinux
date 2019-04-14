@@ -1,0 +1,34 @@
+1.软件的安装
+a)软件的下载 wget [软件url路劲]
+b)源码安装
+    i)先将lrz解压 tar -xvf lrzsz-0.12.20.tar.gz
+    ii)进入解压目录 cd lrzsz-0.12.20
+    iii)检查编译环境 ./configure
+    iv)编译 make
+    v)安装 make install
+    vi)验证 lrz 如果出现一个弹框 代表安装成功
+    vii) 检查编译环境 编译 安装可以同时进行 configure  make  make install
+c)rpm安装方式
+   i) 下载软件包 软件的下载 wget [软件url路劲]
+   ii)解压 tar -xvf.....tar.gz
+   iii)安装 rpm -ivh *.rpm --nodeps --force
+   iv)验证
+    1.首先启动mysql 服务 service mysql start
+    2.登录 普通用户登录 Mysql 管理员用户 Mysql -uroot -p
+d)yum (有时候需要联网)
+
+2.进程的查看与查杀
+ a)进程查看 ps 
+    查看qq的进程 
+    ps -ef | grep qq
+    ps -aux | grep qq
+ b)杀进程
+    1.通过进程号来杀 kill -9 [进程号]
+    2.通过进程名来杀 killall [进程名称]
+
+网卡配置
+1)第一种方式 
+ a)右上角的小电脑
+2第二种方式 
+ b)setup命令
+

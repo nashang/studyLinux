@@ -12,6 +12,7 @@
     a)top 监控cpu运行情况
     b)free 监控内存
     d)df -hT 查看文件系统占用磁盘使用情况
+    e) ps -aux | grep 进程名称 ps -ef | grep 进程名称
 
 4关机和重启(都需要root权限)
     a)关机 halt
