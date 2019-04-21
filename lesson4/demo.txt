@@ -32,3 +32,48 @@ d)yum (有时候需要联网)
 2第二种方式 
  b)setup命令
 
+ 文件的传输与文件控制
+ 三种形式
+ 1.lrz
+ 2.Xftp
+ 3.scp
+ a)第一种：从本机传输到另一台Linux主机
+ i)格式：scp [文件] root@[IP地址]:/[路劲]
+   scp jason.txt root@192.168.1.34:/home/
+   将jason.txt文件传输到192.168.1.34这台linux主机上home目录下
+b)从另一台主机传输到本机
+ i)格式:scp root@[ip地址]:/[文件路劲]  /[本机路劲]
+  scp root@192.168.1.34:/opt/b.txt /opt/
+  将b.txt文件从192.168.1.34这台主机上 传输到我的本机/opt/目录下
+
+  远程控制
+  a)格式: ssh @root[ip地址]
+   远程到192.168.1.34那台主机上
+
+   shell
+   1.什么是内核
+    a)内部的核心源代码
+   2.什么是shell
+     a)是一个程序 用来解释执行命令
+     b)存放一些linux命令
+   3.其他脚本语言
+    a)vbs
+    b)javascript
+    c)python
+    解释型语言与编译型语言区别
+    解释型语言：直接用解释器解释就可以了
+    编译型语言：用编译器编译成机器能识别的二进制
+  4.shell脚本
+    a)文件后缀的格式：.sh结尾
+    b)什么用？
+     i)可以完成一些软件的自动化安装
+    c)一个简单的shell脚本程序
+     #！/bin/bash
+    echo "hello world"
+    d)脚本里执行：
+    i)格式：sh xx.sh
+    e)一些语法
+    i)if判断
+        if [ 4 -gt 8 ]
+        then
+        echo "4 > 8"
